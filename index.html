@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Halaman HTML</title>
+</head>
+<body>
+  <h1 id="judul">Selamat Datang</h1>
+  <button id="ubahTeksButton">Ubah Teks</button>
+  <button id="ubahWarnaButton">Ubah Warna</button>
+
+  <script>
+    // Fungsi untuk mengubah teks judul
+    function ubahTeks() {
+      var judul = document.getElementById("judul");
+      judul.textContent = "Teks sudah diubah!";
+    }
+
+    // Fungsi untuk mengubah warna latar belakang
+    function ubahWarna() {
+      document.body.style.backgroundColor = "lightblue";
+    }
+
+    // Mengaitkan fungsi dengan tombol
+    var ubahTeksButton = document.getElementById("ubahTeksButton");
+    ubahTeksButton.addEventListener("click", ubahTeks);
+
+    var ubahWarnaButton = document.getElementById("ubahWarnaButton");
+    ubahWarnaButton.addEventListener("click", ubahWarna);
+  </script>
+</body>
+</html>
